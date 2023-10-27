@@ -1,0 +1,251 @@
+* {
+	font-family: 'Open Sans', sans-serif;
+}
+.icons{
+	cursor: pointer;
+}
+.navbar {
+	/* Your initial styles for the navigation */
+	background-color: transparent;
+	transition: background-color 0.3s ease;
+	box-shadow: none;
+  }
+  
+  .navbar.scrolled {
+	background-color:rgba(19, 17, 17, 0.467);
+	box-shadow: 0 2px 4px rgba(51, 49, 49, 0.327);
+  }
+  .bg-transparent {
+	background-color: rgba(22, 11, 11, 0.467);
+  }
+#content {
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+@media only screen and (max-width: 767px) {
+	.navbar-nav {
+		text-align: center
+	}
+	.carousel-caption {
+		bottom: 165px
+	}
+	.carousel-caption h5 {
+		font-size: 16px
+	}
+	.carousel-caption a {
+		padding: 10px 15px;
+		font-size: 14px
+	}
+	.carousel-caption h1{
+		font-size: 30px;
+	}
+	
+}
+/* Styles for small screens */
+@media (max-width: 576px) {
+	/* CSS rules for small screens */
+	body {
+	  font-size: 14px;
+	}
+	h1 {
+	  font-size: 24px;
+	}
+	/* Add more font-size rules for other elements as needed */
+  }
+  
+  /* Styles for medium screens */
+  @media (min-width: 577px) and (max-width: 768px) {
+	/* CSS rules for medium screens */
+	body {
+	  font-size: 16px;
+	}
+	h1 {
+	  font-size: 28px;
+	}
+	/* Add more font-size rules for other elements as needed */
+  }
+  
+  /* Styles for large screens */
+  @media (min-width: 769px) and (max-width: 992px) {
+	/* CSS rules for large screens */
+	body {
+	  font-size: 18px;
+	}
+	h1 {
+	  font-size: 32px;
+	}
+	/* Add more font-size rules for other elements as needed */
+  }
+  
+  /* Styles for extra large screens */
+  @media (min-width: 993px) {
+	/* CSS rules for extra large screens */
+	body {
+	  font-size: 20px;
+	}
+	h1 {
+	  font-size: 36px;
+	}
+	/* Add more font-size rules for other elements as needed */
+  }
+video{
+	position: relative;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+#footer{
+	background-image:url("../assets/bg.png");
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:cover;
+
+}
+.pic-background{
+	background-image:url("../assets/section4.jpg");
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:cover;
+
+}
+.line {
+	width: 60px;
+	height: 2px;
+	margin-bottom: 20px;
+	background:#0d6efd;
+  }
+.section-title{
+    text-align: center;
+    padding: 30px 0;
+    position: relative;}
+.section-title span{
+		position: absolute;
+		top: 30px;
+		color: #f0f1f3;
+		left: 0;
+		right: 0;
+		z-index: 1;
+		font-weight: 700;
+		font-size: 52px;
+		text-transform: uppercase;
+		line-height: 0;
+	  }
+.section-title h2{
+		font-size: 32px;
+		font-weight: 700;
+		text-transform: uppercase;
+		margin-bottom: 20px;
+		padding-bottom: 0;
+		color: #5f687b;
+		position: relative;
+		z-index: 2;
+	}
+.section-title p{
+		font-size: 16px;
+		font-weight: 400;
+		color: #5f687b;
+		margin-bottom: 0;
+		padding-bottom: 0;
+		position: relative;
+		z-index: 2;	
+}
+.section-padding{
+		padding:130px 0}
+.template-btn{
+			color:#131230;
+			background:#ffb606;
+			font-family:"Roboto",sans-serif;
+			text-transform:uppercase;
+			font-size:14px;
+			font-weight:500;
+			border:1px solid transparent;
+			display:inline-block;
+			padding:12px 30px !important;
+			-o-transition:all .5s;
+			transition:all 0.5s}
+.template-btn:hover{
+			color:#131230;
+			background:#90d0ef;
+			border:1px solid #ffb606
+		}
+
+
+.team-img{
+	transition: all ease-in-out 0.4s;
+}
+.team-img img:hover{
+	transform: scale(1.1);
+	opacity: 1;
+}
+.fadeInUp{
+	animation-name: fadeInUp;
+	
+}
+.offer:hover{
+	transform: scale(1.1);
+	opacity: 1;
+	transition: all ease-in-out 0.4s;
+
+}
+.price h3{
+    font-weight: 500;
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #37517e;
+}
+.price h4{
+    font-size: 48px;
+    color: #37517e;
+    font-weight: 400;
+    font-family: "Jost", sans-serif;
+    margin-bottom: 25px;
+}
+.price ul{
+    padding: 20px 0;
+    list-style: none;
+    color: #999;
+    line-height: 20px;
+}
+.price span{
+	font-size: 15px;
+	color:gray;
+}
+.price .box{
+    padding: 60px 40px;
+    box-shadow: 0 3px 20px -2px rgba(20, 45, 100, 0.1);
+    background: #fff;
+    height: 100%;
+    border-top: 4px solid #fff;
+    border-radius: 5px;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+.contact .box{
+    color: #444444;
+    background: #bcc7f6;
+    padding: 30px;
+}
+  /*  */
+  /*  */
+  /*  */
+  /*  */
+
+		body{color:#777;font-family:"Roboto",sans-serif;font-size:14px;font-weight:400}
+		h1{color:#111010;font-family:"Playfair Display",serif;font-size:60px !important;font-weight:700;}
+		h2{color:#1a1515;font-family:"Playfair Display",serif;font-size:36px !important;font-weight:700}
+		h3{color:#131230;font-family:"Playfair Display",serif;font-size:28px !important;font-weight:700}
+		h4{color:#fff;font-family:"Roboto",sans-serif;font-size:24px !important;font-weight:400;text-transform:capitalize}
+		h5{color:#131230;font-family:"Playfair Display",serif;text-transform:capitalize;font-size:20px !important;font-weight:700}
+		h6{color:#fff;font-size:16px !important;font-family:"Roboto",sans-serif;font-weight:300;text-transform:uppercase}
+		ul{margin:0;padding:0;list-style:none}a:hover,a:focus{text-decoration:none}
+		input:focus,textarea:focus{outline:none}
+		section{position:relative;padding:100px 0}
+.team .member{
+			margin-bottom: 20px;
+			padding: 30px 20px;
+			background: #fff;
+			border-radius: 5px;		}
