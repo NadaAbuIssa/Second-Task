@@ -5,173 +5,160 @@
 	cursor: pointer;
 }
 .navbar {
-	/* Your initial styles for the navigation */
 	background-color: transparent;
 	transition: background-color 0.3s ease;
 	box-shadow: none;
-  }
-  
-  .navbar.scrolled {
-	background-color:rgba(19, 17, 17, 0.467);
+	z-index: 1;
+}
+.nav-color{
+	color: #f3d94a !important;
+	text-shadow:1px 1px #2b2b2a4b !important;
+}
+.scrolled {
+	background-color:rgba(39, 77, 80, 0.76);
 	box-shadow: 0 2px 4px rgba(51, 49, 49, 0.327);
-  }
-  .bg-transparent {
+	z-index: 100;
+	width: 100%;
+}
+.bg-transparent {
 	background-color: rgba(22, 11, 11, 0.467);
-  }
-#content {
-    left: 0;
-    width: 100%;
-    height: 100%;
 }
-@media only screen and (max-width: 767px) {
-	.navbar-nav {
-		text-align: center
-	}
-	.carousel-caption {
-		bottom: 165px
-	}
-	.carousel-caption h5 {
-		font-size: 16px
-	}
-	.carousel-caption a {
-		padding: 10px 15px;
-		font-size: 14px
-	}
-	.carousel-caption h1{
-		font-size: 30px;
-	}
-	
+/* scalling */
+#content{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 32px;
+	bottom: 0;
+	transition: all .2s;
 }
-/* Styles for small screens */
-@media (max-width: 576px) {
-	/* CSS rules for small screens */
-	body {
-	  font-size: 14px;
-	}
-	h1 {
-	  font-size: 24px;
-	}
-	/* Add more font-size rules for other elements as needed */
+#content-frame{
+	border: 0;
+	position: absolute;
+}
+.content-desktop{
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.content-tablet{
+	width: 767px;
+	height: 100%;
+	left: calc(50% - 384px);
+}
+.content-phone{
+	width: 380px;
+	height: 680px;
+	left: calc(50% - 190px);
+	top: 0;
+	margin-top: 20px;
+
+}
+
+.intro{
+	color:#d1b411;
+}
+
+.banner {
+	position: relative;
+	height: 0;
+	padding-bottom: 56.25%; /* 16:9 aspect ratio (change as needed) */
+	overflow: hidden;
   }
-  
-  /* Styles for medium screens */
-  @media (min-width: 577px) and (max-width: 768px) {
-	/* CSS rules for medium screens */
-	body {
-	  font-size: 16px;
-	}
-	h1 {
-	  font-size: 28px;
-	}
-	/* Add more font-size rules for other elements as needed */
+  .banner video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
   }
-  
-  /* Styles for large screens */
-  @media (min-width: 769px) and (max-width: 992px) {
-	/* CSS rules for large screens */
-	body {
-	  font-size: 18px;
-	}
-	h1 {
-	  font-size: 32px;
-	}
-	/* Add more font-size rules for other elements as needed */
-  }
-  
-  /* Styles for extra large screens */
-  @media (min-width: 993px) {
-	/* CSS rules for extra large screens */
-	body {
-	  font-size: 20px;
-	}
-	h1 {
-	  font-size: 36px;
-	}
-	/* Add more font-size rules for other elements as needed */
-  }
+
 video{
 	position: relative;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
 }
 #footer{
 	background-image:url("../assets/bg.png");
 	background-repeat:no-repeat;
 	background-position:center;
 	background-size:cover;
-
 }
 .pic-background{
 	background-image:url("../assets/section4.jpg");
 	background-repeat:no-repeat;
 	background-position:center;
 	background-size:cover;
-
+}
+.long-line{
+	border-bottom: 2px solid #eee;
+	margin-bottom: 30px;
 }
 .line {
-	width: 60px;
-	height: 2px;
-	margin-bottom: 20px;
-	background:#0d6efd;
-  }
+	padding: 4px;
+	color:rgb(108, 51, 149);
+	border-bottom: 2px solid rgb(108, 51, 149);
+}
 .section-title{
-    text-align: center;
-    padding: 30px 0;
-    position: relative;}
+	padding: 30px 0;
+	color:rgb(108, 51, 149);
+	position: relative;
+}
 .section-title span{
-		position: absolute;
-		top: 30px;
-		color: #f0f1f3;
-		left: 0;
-		right: 0;
-		z-index: 1;
-		font-weight: 700;
-		font-size: 52px;
-		text-transform: uppercase;
-		line-height: 0;
-	  }
+	position: absolute;
+	top: 30px;
+	color:#8dbebe33 !important;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	font-weight: 700;
+	font-size: 52px !important;
+	text-transform: uppercase;
+	line-height: 0;
+}
 .section-title h2{
-		font-size: 32px;
-		font-weight: 700;
-		text-transform: uppercase;
-		margin-bottom: 20px;
-		padding-bottom: 0;
-		color: #5f687b;
-		position: relative;
-		z-index: 2;
-	}
+	font-size: 32px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	padding-bottom: 0;
+	color:rgb(108, 51, 149);
+	position: relative;
+	z-index: 2;
+}
 .section-title p{
-		font-size: 16px;
-		font-weight: 400;
-		color: #5f687b;
-		margin-bottom: 0;
-		padding-bottom: 0;
-		position: relative;
-		z-index: 2;	
+	font-size: 16px;
+	font-weight: 400;
+	color:rgb(38, 4, 63);
+	margin-bottom: 0;
+	padding-bottom: 0;
+	position: relative;
+	z-index: 2;
 }
 .section-padding{
-		padding:130px 0}
+	padding:130px 0
+}
 .template-btn{
-			color:#131230;
-			background:#ffb606;
-			font-family:"Roboto",sans-serif;
-			text-transform:uppercase;
-			font-size:14px;
-			font-weight:500;
-			border:1px solid transparent;
-			display:inline-block;
-			padding:12px 30px !important;
-			-o-transition:all .5s;
-			transition:all 0.5s}
+	color:#131230;
+	background:#ffb606;
+	font-family:"Roboto",sans-serif;
+	text-transform:uppercase;
+	font-size:14px;
+	font-weight:500;
+	border:1px solid transparent;
+	display:inline-block;
+	padding:12px 30px !important;
+	-o-transition:all .5s;
+	transition:all 0.5s
+}
 .template-btn:hover{
-			color:#131230;
-			background:#90d0ef;
-			border:1px solid #ffb606
-		}
-
-
+	color:#131230;
+	background:#90d0ef;
+	border:1px solid #ffb606 
+}
 .team-img{
 	transition: all ease-in-out 0.4s;
 }
@@ -181,71 +168,174 @@ video{
 }
 .fadeInUp{
 	animation-name: fadeInUp;
-	
 }
 .offer:hover{
 	transform: scale(1.1);
 	opacity: 1;
 	transition: all ease-in-out 0.4s;
-
+   /* border-color: rgba(118, 8, 196, 0.285) !important;
+	*/
+}
+.btn-color {
+	border-color: rgba(118, 8, 196, 0.285) !important;
+	background-color:rgb(108, 51, 149) !important;
+	color: white !important;
+}
+.btn-color:hover {
+	background-color: rgba(118, 8, 196, 0.5) !important;
 }
 .price h3{
-    font-weight: 500;
-    margin-bottom: 15px;
-    font-size: 20px;
-    color: #37517e;
+	font-weight: 500;
+	margin-bottom: 15px;
+	font-size: 20px;
+	color: rgb(108, 51, 149);
 }
 .price h4{
-    font-size: 48px;
-    color: #37517e;
-    font-weight: 400;
-    font-family: "Jost", sans-serif;
-    margin-bottom: 25px;
+	font-size: 48px;
+	color: rgba(108, 51, 149, 0.807);
+	font-weight: 400;
+	font-family: "Jost", sans-serif;
+	margin-bottom: 25px;
 }
 .price ul{
-    padding: 20px 0;
-    list-style: none;
-    color: #999;
-    line-height: 20px;
+	padding: 20px 0;
+	list-style: none;
+	color: #999;
+	line-height: 20px;
 }
-.price span{
+/* .price span{
 	font-size: 15px;
 	color:gray;
 }
+*/
 .price .box{
-    padding: 60px 40px;
-    box-shadow: 0 3px 20px -2px rgba(20, 45, 100, 0.1);
-    background: #fff;
-    height: 100%;
-    border-top: 4px solid #fff;
-    border-radius: 5px;
+	padding: 60px 40px;
+	box-shadow: 0 3px 20px -2px rgba(20, 45, 100, 0.1);
+	background: #fff;
+	height: 100%;
+	border-top: 1px solid #fff;
+	border-radius: 5px;
+	border-width: 2px !important;
+}
+.price .box:hover{
+	border-top: 1px solid #37517e;
+	transition: all ease-in-out 0.3s;
+}
+.border-color{
+	border-top: 1px solid rgb(108, 51, 149)!important;
 }
 *, ::after, ::before {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
-
 .contact .box{
-    color: #444444;
-    background: #bcc7f6;
-    padding: 30px;
+	color: rgb(108, 51, 149);
+	background:#8dbebe33;
+	padding: 30px;
 }
-  /*  */
-  /*  */
-  /*  */
-  /*  */
+h1{
+   color:#d1b411;
+   font-weight:700;
+   font-size: 50px ;
+}
+h2{
+   color:#1a1515;
+   font-family:"Playfair Display",serif;
+   font-size:36px !important;
+   font-weight:700
+}
+h3{
+   color:rgb(108, 51, 149);
+   font-size:28px !important;
+   font-weight:700
+}
+h4{
+   color: rgb(52, 22, 74);
+   font-size:24px !important;
+   font-weight:400;
+   text-transform:capitalize
+}
+h5{
+   color:#131230;
+   text-transform:capitalize;
+   font-size:20px !important;
+   font-weight:700
+}
+h6{
+   color:#fff;
+   font-size:16px !important;
+   font-family:"Roboto",sans-serif;
+   font-weight:300;
+   text-transform:uppercase
+}
+ul{
+   margin:0;
+   padding:0;
+   list-style:none
+}
+a:hover,a:focus{
+   text-decoration:none
+}
+input:focus,textarea:focus{
+   outline:none
+}
+section{
+   position:relative;
+   padding:100px 0
+}
+#team .member{
+	margin-bottom: 20px;
+	padding: 30px 20px;
+	background: #fff;
+	border-radius: 5px;
+}
+.team span{
+	color: rgba(108, 51, 149, 0.796);
+}
+.team p{
+	color: rgba(83, 49, 106, 0.861);
+}
+/* footer */
+a.text-decoration-none:hover {
+	color: white !important;
+	text-shadow: #111010;
+}
 
-		body{color:#777;font-family:"Roboto",sans-serif;font-size:14px;font-weight:400}
-		h1{color:#111010;font-family:"Playfair Display",serif;font-size:60px !important;font-weight:700;}
-		h2{color:#1a1515;font-family:"Playfair Display",serif;font-size:36px !important;font-weight:700}
-		h3{color:#131230;font-family:"Playfair Display",serif;font-size:28px !important;font-weight:700}
-		h4{color:#fff;font-family:"Roboto",sans-serif;font-size:24px !important;font-weight:400;text-transform:capitalize}
-		h5{color:#131230;font-family:"Playfair Display",serif;text-transform:capitalize;font-size:20px !important;font-weight:700}
-		h6{color:#fff;font-size:16px !important;font-family:"Roboto",sans-serif;font-weight:300;text-transform:uppercase}
-		ul{margin:0;padding:0;list-style:none}a:hover,a:focus{text-decoration:none}
-		input:focus,textarea:focus{outline:none}
-		section{position:relative;padding:100px 0}
-.team .member{
-			margin-bottom: 20px;
-			padding: 30px 20px;
-			background: #fff;
-			border-radius: 5px;		}
+
+
+/* phone size */
+@media (max-width: 576px) {
+	
+	 h1 {
+		font-size: 25px !important;
+   }
+   .banner-text p {
+      font-size: 13px !important;
+   }
+   #banner-text {
+      top: 70% !important;
+   }
+}
+
+/* tablet size */
+@media (min-width: 577px) and (max-width: 768px) {
+	
+	.banner-text h1 {
+		font-size: 50px !important;
+   }
+   .banner-text p {
+      font-size: 20px !important; 
+   }
+   #banner-text {
+      top: 70% !important; 
+   }
+}
+
+/* desktop size */
+@media (min-width: 769px) and (max-width: 1200px) {
+	h1 {
+		font-size: 70px !important;
+   }
+   .banner-text p {
+      font-size: 30px !important;
+   }
+}

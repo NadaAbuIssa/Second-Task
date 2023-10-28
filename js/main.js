@@ -6,28 +6,36 @@ function a(){
 }
 
 document.getElementById("phone-icon").addEventListener("click", function() {
-    console.log("click");
+  var phone_frame = document.getElementById("content-frame");
+  phone_frame.classList.remove("content-desktop");
+  phone_frame.classList.remove("content-tablet");
+  phone_frame.classList.add("content-phone");
 
-    document.getElementById("content").style.transform = "scale(0.6)";
     console.log("click");
   });
   
   document.getElementById("tablet-icon").addEventListener("click", function() {
+    var tablet_frame = document.getElementById("content-frame");
+    tablet_frame.classList.remove("content-desktop");
+    tablet_frame.classList.remove("content-phone");
+    tablet_frame.classList.add("content-tablet");
+  
     console.log("click");
-
-    document.getElementById("content").style.transform = "scale(0.9)";
-
   });
   
   document.getElementById("laptop-icon").addEventListener("click", function() {
-    console.log("click");
-
-    document.getElementById("content").style.transform = "scale(0.75)";
+    var desktop_frame = document.getElementById("content-frame");
+    desktop_frame.classList.remove("content-tablet");
+    desktop_frame.classList.remove("content-phone");
+    desktop_frame.classList.add("content-desktop");
     console.log("click");
 
   });
   document.getElementById("drop-icon").addEventListener("click", function() {
     document.querySelector("header").remove();
+    window.location.href = "saturn.html";
+    var Nav = document.getElementById("navbar");
+    Nav.classList.replace("pt-5","pt-1");
   });
   window.addEventListener("scroll", function() {
     const navbar = document.getElementById("nav");
