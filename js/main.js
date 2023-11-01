@@ -37,13 +37,4 @@ document.getElementById("phone-icon").addEventListener("click", function() {
     var Nav = document.getElementById("navbar");
     Nav.classList.replace("pt-5","pt-1");
   });
-  window.addEventListener("scroll", function() {
-    const navbar = document.getElementById("nav");
-    const scrolled = window.scrollY > 0;
   
-    if (scrolled) {
-      navbar.classList.add("scrolled");
-    } else {
-      navbar.classList.remove("scrolled");
-    }
-  });

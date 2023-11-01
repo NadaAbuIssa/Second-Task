@@ -1,591 +1,644 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-<head>
-    
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/bootstrap-icons.css">
-    <link href="./css/bootstrap.rtl.min.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="./css/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Saturn</title>
-</head>
-<body>
-  		
-	<!-- nav -->
-	<div id="nav" class=" pt-2 navbar navbar-expand-md navbar-dark shadow-3 shadow-inner hover-shadow text-white fixed-top scrolled">
-        <div class="container mask">
-            <a href="index.html" class="navbar-brand">
-				<img src="./assets/saturn.png" alt="">
-			</a>
-            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#mainmenu" aria-expanded="false">
-                <span class="navbar-toggler-icon"></span>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="./css/bootstrap-icons.css">
+      <link href="./css/bootstrap.rtl.min.css" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="stylesheet" href="./css/style.css">
+	  <link rel="icon" href="./assets/tab_icon.png"> 
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Saturn</title>
+   </head>
+   <body>
+      <!-- nav -->
+      <div id="nav" class="navbar navbar-expand-lg text-white fixed-top">
+         <div class="h-100 w-100 position-absolute">
+            <div class="logo">
+               <a href="index.html" class="mb-30">
+               <img src="./assets/saturn.png" alt="">
+               </a>
+			   <button id="menu_btn" class="navbar-toggler collapsed float-left " type="button" data-bs-toggle="collapse" data-bs-target="#mainmenu" aria-expanded="false">
+               <div id="list_btn" class="">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-list" viewBox="0 0 16 16">
+                     <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                    </svg></div> 
+               <div id="X_btn" class="hide">
+               <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-x-square-fill" viewBox="0 0 16 16">
+                  <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm3.354 4.646L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 1 1 .708-.708z"/>
+                </svg></div>
+                             
             </button>
-            <div class="navbar-collapse collapse" id="mainmenu">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a href="index.html" class="nav-link text-decoration-none nav-color">الصفحة الرئيسية</a></li>
-                    <li class="nav-item"><a href="#about" class="nav-link text-decoration-none nav-color">زحل</a></li>
-                    <li class="nav-item"><a href="#services" class="nav-link text-decoration-none nav-color">خدماتنا</a></li>
-                    <li class="nav-item"><a href="#team" class="nav-link text-decoration-none nav-color">فريقنا</a></li>
-                    <li class="nav-item"><a href="#bg_img" class="nav-link text-decoration-none nav-color">انصم الينا</a></li>
-                    <li class="nav-item"><a href="#Price" class="nav-link text-decoration-none nav-color">الأسعار</a></li>
-                    <li class="nav-item"><a href="#Contact" class="nav-link text-decoration-none nav-color">اتصل بنا</a></li>
-                </ul>
+          </div>
+            <div class="navbar-collapse top-70 collapse" id="mainmenu">
+               <ul class="d-flex flex-column ms-auto">
+                  <li class="nav-item">
+                     <a href="#banner" class="nav-link text-decoration-none nav-color">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16">
+                           <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146ZM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5Z"/>
+                        </svg>
+                        <span>الرئيسية</span>						
+                     </a>
+                  </li>
+                  <li class="nav-item">
+                     <a href="#about" class="nav-link text-decoration-none nav-color">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-rocket" viewBox="0 0 16 16">
+                           <path d="M8 8c.828 0 1.5-.895 1.5-2S8.828 4 8 4s-1.5.895-1.5 2S7.172 8 8 8Z"/>
+                           <path d="M11.953 8.81c-.195-3.388-.968-5.507-1.777-6.819C9.707 1.233 9.23.751 8.857.454a3.495 3.495 0 0 0-.463-.315A2.19 2.19 0 0 0 8.25.064.546.546 0 0 0 8 0a.549.549 0 0 0-.266.073 2.312 2.312 0 0 0-.142.08 3.67 3.67 0 0 0-.459.33c-.37.308-.844.803-1.31 1.57-.805 1.322-1.577 3.433-1.774 6.756l-1.497 1.826-.004.005A2.5 2.5 0 0 0 2 12.202V15.5a.5.5 0 0 0 .9.3l1.125-1.5c.166-.222.42-.4.752-.57.214-.108.414-.192.625-.281l.198-.084c.7.428 1.55.635 2.4.635.85 0 1.7-.207 2.4-.635.067.03.132.056.196.083.213.09.413.174.627.282.332.17.586.348.752.57l1.125 1.5a.5.5 0 0 0 .9-.3v-3.298a2.5 2.5 0 0 0-.548-1.562l-1.499-1.83ZM12 10.445v.055c0 .866-.284 1.585-.75 2.14.146.064.292.13.425.199.39.197.8.46 1.1.86L13 14v-1.798a1.5 1.5 0 0 0-.327-.935L12 10.445ZM4.75 12.64C4.284 12.085 4 11.366 4 10.5v-.054l-.673.82a1.5 1.5 0 0 0-.327.936V14l.225-.3c.3-.4.71-.664 1.1-.861.133-.068.279-.135.425-.199ZM8.009 1.073c.063.04.14.094.226.163.284.226.683.621 1.09 1.28C10.137 3.836 11 6.237 11 10.5c0 .858-.374 1.48-.943 1.893C9.517 12.786 8.781 13 8 13c-.781 0-1.517-.214-2.057-.607C5.373 11.979 5 11.358 5 10.5c0-4.182.86-6.586 1.677-7.928.409-.67.81-1.082 1.096-1.32.09-.076.17-.135.236-.18Z"/>
+                           <path d="M9.479 14.361c-.48.093-.98.139-1.479.139-.5 0-.999-.046-1.479-.139L7.6 15.8a.5.5 0 0 0 .8 0l1.079-1.439Z"/>
+                        </svg>
+                        <span>زحل</span>
+                     </a>
+                  </li>
+                  <li class="nav-item">
+                     <a href="#services" class="nav-link text-decoration-none nav-color">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-hdd-stack" viewBox="0 0 16 16">
+                           <path d="M14 10a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1h12zM2 9a2 2 0 0 0-2 2v1a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-1a2 2 0 0 0-2-2H2z"/>
+                           <path d="M5 11.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-2 0a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zM14 3a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h12zM2 2a2 2 0 0 0-2 2v1a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2z"/>
+                           <path d="M5 4.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-2 0a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z"/>
+                        </svg>
+                        <span>خدماتنا</span>
+                     </a>
+                  </li>
+                  <li class="nav-item">
+                     <a href="#team" class="nav-link text-decoration-none nav-color">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-people" viewBox="0 0 16 16">
+                           <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8Zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022ZM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816ZM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0Zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z"/>
+                        </svg>
+                        <span>فريقنا </span>
+                     </a>
+                  </li>
+                  <li class="nav-item">
+                     <a href="#bg_img" class="nav-link text-decoration-none nav-color">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-door-open-fill" viewBox="0 0 16 16">
+                           <path d="M1.5 15a.5.5 0 0 0 0 1h13a.5.5 0 0 0 0-1H13V2.5A1.5 1.5 0 0 0 11.5 1H11V.5a.5.5 0 0 0-.57-.495l-7 1A.5.5 0 0 0 3 1.5V15H1.5zM11 2h.5a.5.5 0 0 1 .5.5V15h-1V2zm-2.5 8c-.276 0-.5-.448-.5-1s.224-1 .5-1 .5.448.5 1-.224 1-.5 1z"/>
+                        </svg>
+                        <span>انصم الينا</span>
+                     </a>
+                  </li>
+                  <li class="nav-item">
+                     <a href="#Price" class="nav-link text-decoration-none nav-color">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-tags" viewBox="0 0 16 16">
+                           <path d="M3 2v4.586l7 7L14.586 9l-7-7H3zM2 2a1 1 0 0 1 1-1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 2 6.586V2z"/>
+                           <path d="M5.5 5a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm0 1a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM1 7.086a1 1 0 0 0 .293.707L8.75 15.25l-.043.043a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 0 7.586V3a1 1 0 0 1 1-1v5.086z"/>
+                        </svg>
+                        <span>الأسعار</span>
+                     </a>
+                  </li>
+                  <li class="nav-item">
+                     <a href="#Contact" class="nav-link text-decoration-none nav-color">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                           <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                        </svg>
+                        <span>اتصل بنا</span>
+                     </a>
+                  </li>
+               </ul>
             </div>
-		</div>
-	</div>
-	<!--  -->
+         </div>
+      </div>
+      <!--  -->
+      <!-- banner video and text-->
+      <div id="banner" class="container-fluid p-0">
+         <div class="banner">
+            <video class="embed-responsive-item" muted autoplay="autoplay" loop="loop">
+               <source src="./assets/video.mp4" type="video/mp4">
+            </video>
+            <div class="container">
+               <div id="banner-text" class="row position-absolute top-50 start-50 translate-middle">
+                  <div class="col-12 intro">
+                     <h1 class="banner-text text-center">خدمات سحابية</h1>
+                     <p class="banner-text">خدمات مبتكرة تلبي احتياجاتك التقنية بكفاءة وأمان على أعلى مستوى</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--  -->
+      <!-- 5th_section -->
+      <section class="mt-4 pt-4 py-4 bg-white text-light ">
+         <br><br><br><br>
+         <div class="container">
+            <div class="row  align-items-center justify-content-center flex-row-reverse">
+               <div class="col-md">
+                  <img src="./assets/launch.svg" alt="" class="img-fluid">
+               </div>
+               <div id="about"  class="col-md py-2 text-dark">
+                  <div class="fst-normal fs-2 section-title">استعد للانطلاق نحو المستقبل</div>
+                  <div>
+                     <ul class="fs-4 long-line">
+                        <li class="d-inline line ms-2">هدفنا</li>
+                        <li class="d-inline  ms-4">خبرتنا</li>
+                        <li class="d-inline  ms-4">فريقنا</li>
+                     </ul>
+                  </div>
+                  <div class=""></div>
+                  <p>
+                     مع شركة زحل. نحن نوفر حلولًا مبتكرة ومتقدمة في مجال الحوسبة السحابية
+                     <br>
+                     نعمل جنبًا إلى جنب مع عملائنا لتحقيق النجاح وتحقيق أهدافهم
+                  </p>
+                  <p class="section-title pt-1 pb-1 fw-bold">الخبرة والتميز: تقديم الخدمات على أعلى مستوى </p>
+                  <p>خبرتنا وفريقنا المتخصص يضمنان تقديم الخدمات على أعلى مستوى وفقًا لأحدث التقنيات والمعايير.
+                     <br>
+                     نحن نسعى جاهدين لتحقيق رضا العملاء وتجاوز توقعاتهم من خلال تقديم حلول فعالة وموثوقة
+                  </p>
+                  <p class=" fw-bold section-title pt-1 pb-1">فريقنا المحترف: شركاء في الابتكار والتطوير لتحقيق النجاح المستدام</p>
+                  <p>
+                     فريقنا المحترف مستعد لمساعدتك في الابتكار والتطوير وتحقيق النجاح في مجالك
+                     <br>
+                     انضم إلى قائمة عملائنا المتميزين واستمتع بتجربة فريدة وحلول مبتكرة تساهم في نجاحك المستدام
+                  </p>
+               </div>
+            </div>
+         </div>
+         <br><br><br><br>
+      </section>
+      <!--  -->
+      <div class="container-xxl mt-5 pt-5 shadow-lg p-3 mb-4 bg-body-tertiary rounded py-5" id="services">
+         <br><br>
+         <!-- Services -->
+         <div class="container  py-5 px-lg-5">
+            <div class="text-center  fadeInUp" data-wow-delay="0.1s">
+               <div class="section-title">
+                  <span>خدماتنا</span>
+                  <h2>خدماتنا</h2>
+               </div>
+            </div>
+            <div class="row g-4">
+               <div class="col-xl-3 col-lg-4 d-flex align-items-stretch fadeInUp" data-wow-delay="0.3s">
+                  <div class="bg-light shadow-lg p-3 mb-5 bg-body-tertiary rounded p-4">
+                     <h5 class="mb-3">خدمات الحوسبة السحابية</h5>
+                     <p class="m-0">
+                        توفير خوادم افتراضية تمكن المؤسسات من استضافة تطبيقاتها ومواقع الويب على السحابة
+                        توفير موارد الحوسبة بناءً على الطلب، مثل الوحدات المركزية
+                     </p>
+                     <div class="d-inline-flex  align-items-center justify-content-center bg-secondary-gradient rounded-circle mb-4" style="width: 60px; height: 60px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill=" rgb(108, 51, 149)" class="bi bi-cloud" viewBox="0 0 16 16">
+                           <path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383zm.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
+                        </svg>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xl-3 col-lg-4 d-flex align-items-stretch fadeInUp" data-wow-delay="0.3s">
+                  <div class="bg-light shadow-lg p-3 mb-5 bg-body-tertiary rounded p-4">
+                     <h5 class="mb-3">خدمات التخزين السحابي</h5>
+                     <p class="m-0">
+                        توفير مساحة تخزين سحابية للملفات وقواعد البيانات و المستندات البيانات الأخرى على الإنترنت
+                        الوصول إلى البيانات من أي مكان وفي أي وقت بواسطة الإنترنت
+                     </p>
+                     <div class="d-inline-flex  align-items-center justify-content-center bg-secondary-gradient rounded-circle mb-4" style="width: 60px; height: 60px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill=" rgb(108, 51, 149)" class="bi bi-cloud-arrow-up" viewBox="0 0 16 16">
+                           <path fill-rule="evenodd" d="M7.646 5.146a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 6.707V10.5a.5.5 0 0 1-1 0V6.707L6.354 7.854a.5.5 0 1 1-.708-.708l2-2z"/>
+                           <path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383zm.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
+                        </svg>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xl-3 col-lg-4 d-flex align-items-stretch fadeInUp" data-wow-delay="0.5s">
+                  <div class=" bg-light shadow-lg p-3 mb-5 bg-body-tertiary rounded p-4">
+                     <h5 class="mb-3">خدمات الشبكة السحابية</h5>
+                     <p class="m-0">
+                        توفير خدمات الشبكة الافتراضية للاتصال بين الموارد والتطبيقات والمستخدمين على السحابة
+                        إمكانية تكوين شبكات افتراضية خاصة وتوزيع المرور وتأمين مرور البيانات
+                     </p>
+                     <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle mb-4" style="width: 60px; height: 60px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill=" rgb(108, 51, 149)" class="bi bi-hdd-network" viewBox="0 0 16 16">
+                           <path d="M4.5 5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zM3 4.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z"/>
+                           <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v1a2 2 0 0 1-2 2H8.5v3a1.5 1.5 0 0 1 1.5 1.5h5.5a.5.5 0 0 1 0 1H10A1.5 1.5 0 0 1 8.5 14h-1A1.5 1.5 0 0 1 6 12.5H.5a.5.5 0 0 1 0-1H6A1.5 1.5 0 0 1 7.5 10V7H2a2 2 0 0 1-2-2V4zm1 0v1a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1zm6 7.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5z"/>
+                        </svg>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xl-3 col-lg-4 d-flex align-items-stretch fadeInUp" data-wow-delay="0.1s">
+                  <div class=" bg-light shadow-lg p-3 mb-5 bg-body-tertiary rounded p-4">
+                     <h5 class="mb-3">خدمات التحليل السحابي</h5>
+                     <p class="m-0">
+                        توفير أدوات وخدمات التحليل لاستخلاص البيانات القيمة وتحليلها
+                        تقديم الذكاء الاصطناعي وتعلم الآلة للتنبؤ بالاتجاهات وتوفير النصائح التحليلية وتحويلها إلى معلومات قيمة
+                     </p>
+                     <div class="d-inline-flex align-items-center justify-content-center bg-secondary-gradient rounded-circle mb-4" style="width: 60px; height: 60px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill=" rgb(108, 51, 149)" class="bi bi-bar-chart-line-fill" viewBox="0 0 16 16">
+                           <path d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1V2z"/>
+                        </svg>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xl-3 col-lg-4 d-flex align-items-stretch fadeInUp" data-wow-delay="0.3s">
+                  <div class=" bg-light shadow-lg p-3 mb-5 bg-body-tertiary rounded p-4">
+                     <h5 class="mb-3">خدمات الأمان السحابي</h5>
+                     <p class="m-0">
+                        توفير حماية للبيانات والتطبيقات والأنظمة من خلال تقديم خدمات الأمان السحابي
+                        تأمين الاتصالات والتشفير والتحقق من الهوية وإدارة الوصول
+                     </p>
+                     <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle mb-4" style="width: 60px; height: 60px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill=" rgb(108, 51, 149)" class="bi bi-shield-fill-check" viewBox="0 0 16 16">
+                           <path fill-rule="evenodd" d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.777 11.777 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7.159 7.159 0 0 0 1.048-.625 11.775 11.775 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.541 1.541 0 0 0-1.044-1.263 62.467 62.467 0 0 0-2.887-.87C9.843.266 8.69 0 8 0zm2.146 5.146a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647z"/>
+                        </svg>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <br><br>
+         <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+         <!-- 6th_section _Team-->
+         <section id="team">
+            <br><br>
+            <div class="container text-center">
+               <div class="section-title">
+                  <span>فريقنا</span>
+                  <h2>فريقنا</h2>
+                  <p>
+                     فريقنا المتكامل من المحترفين ذوي المهارات العالية الذين يعملون بتفانٍ لضمان تقديم الخدمات على أعلى مستوى. يضم فريقنا متخصصين متمرسين يتمتعون بمعرفة واسعة بأحدث التقنيات والمعايير،
+                     مما يضمن تقديم حلول فعالة وموثوقة. نحن نسعى جاهدين لتحقيق رضا عملائنا وتجاوز توقعاتهم
+                  </p>
+               </div>
+               <div class="row team">
+                  <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                     <div class="team-img bg-white m-20 member bg-light shadow-lg p-3 mb-5 bg-body-tertiary rounded p-4">
+                        <img src="./assets/team1.jpg" alt="" class="team-img img-fluid rounded">
+                        <h4 class="mt-3 ms-2">حسن إبراهيم</h4>
+                        <span>مهندس برمجيات </span>
+                        <p>
+                           ذو خبرة واسعة في تطوير حلول قابلة للتوسع والمبتكرة. بفضل معرفته الواسعة بلغات البرمجة، يقدم بشكل مستمر رمزًا عالي الجودة يلبي متطلبات العملاء			
+                        </p>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                     <div class="team-img bg-white m-20 member bg-light shadow-lg p-3 mb-5 bg-body-tertiary rounded p-4">
+                        <img src="./assets/team3.jpg" alt="" class="team-img img-fluid rounded">
+                        <h4 class="mt-3 ms-2">احمد حسن</h4>
+                        <span>مدير المشروعات</span>
+                        <p>
+                           مدير مشروعات ديناميكي ومتحمس يتفوق في قيادة فرق عابرة للوظائف. بفضل مهاراته الممتازة في التنظيم والقدرة القوية على التواصل، يضمن تسليم المشاريع في الوقت
+                        </p>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                     <div class="team-img bg-white m-20 member bg-light shadow-lg p-3 mb-5 bg-body-tertiary rounded p-4">
+                        <img src="./assets/team2.jpg" alt="" class="team-img img-fluid rounded">
+                        <h4 class="mt-3 ms-2">علي خان</h4>
+                        <span>مدير تسويق</span>
+                        <p>
+                           محترف تسويق ماهر بشغف لإنشاء استراتيجيات فعالة تدفع نمو الأعمال. لديه سجل حافل في تطوير حملات تسويق ناجحة وبناء علاقات قوية مع العملاء
+                        </p>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                     <div class="team-img member bg-white m-20 bg-light shadow-lg p-3 mb-5 bg-body-tertiary rounded p-4">
+                        <img src="./assets/team4.jpg" alt="" class="team-img img-fluid rounded">
+                        <h4 class="mt-3 ms-2">كريم محمود</h4>
+                        <span>محلل مالي</span>
+                        <p>
+                           محلل مالي متخصص في التفاصيل ولديه فهم عميق للنماذج المالية وتحليل البيانات. يلعب دوراً حاسماً في تقييم الأداء المالي للشركة، وإعداد الميزانيات، وتقديم توصيات				
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!--  -->
+      </div>
+      <!--  -->
+      <!-- 4th_section -->
+      <div id="bg_img" class="pic-background  section-padding text-center">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-12 ">
+                  <h2 class="mt-9 text-white">ابدأ تجربتك المجانية لمدة 14 يومًا</h2>
+                  <h4 class="mb-5 mt-4  text-shadow text-white p-3">
+                     انضم إلى أكثر من 10.000+ من العملاء الراضين الذين يستخدمون بالفعل زحل
+                  </h4>
+                  <a href="" class="btn text-decoration-none template-btn template-btn2 mt-4">ابدأ مجانا</a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--  -->
+      <!-- 7th_section pricing-->
+      <section id="Price" class=" price container-xxl py-5">
+         <br><br>
+         <div class="container py-5 px-lg-5">
+            <div class="section-title text-center  fadeInUp" data-wow-delay="0.1s">
+               <span>أسعارنا</span>
+               <h2>أسعارنا</h2>
+            </div>
+            <div class="row">
+               <div class="col-lg-4 mt-4 mt-lg-0 offer" data-aos="fade-up" data-aos-delay="200">
+                  <div class="box">
+                     <h3>التجربة المجانية</h3>
+                     <h4>0<sup>$</sup><span>/شهر</span></h4>
+                     <ul>
+                        <li>
+                           العديد من الأنواع المتوفرة لنصوص لوريم
+                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(108, 51, 149)" class="bi bi-check" viewBox="0 0 16 16">
+                              <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+                           </svg>
+                        </li>
+                        <li>
+                           ولكن الغالبية تم تعديلها بشكل 
+                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(108, 51, 149)" class="bi bi-check" viewBox="0 0 16 16">
+                              <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+                           </svg>
+                        </li>
+                        <li class="na">
+                           <span>  إدخال بعض النوادر أو الكلمات العشوائية </span>
+                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-x" viewBox="0 0 16 16">
+                              <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                           </svg>
+                        </li>
+                        <li class="na">
+                           <span>إلى النص</span>
+                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-x" viewBox="0 0 16 16">
+                              <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                           </svg>
+                        </li>
+                     </ul>
+                     <br>
+                     <a href="#" class=" btn btn-color">ابدأ معنا</a>
+                  </div>
+               </div>
+               <div class="col-lg-4 mt-4 mt-lg-0 offer" data-aos="fade-up" data-aos-delay="200">
+                  <div  class="box border-color ">
+                     <h3>الأعمال التجارية</h3>
+                     <h4>25<sup>$</sup><span>/شهر</span></h4>
+                     <ul>
+                        <li>
+                           العديد من الأنواع المتوفرة لنصوص لوريم
+                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(108, 51, 149)" class="bi bi-check" viewBox="0 0 16 16">
+                              <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+                           </svg>
+                        </li>
+                        <li>
+                           ولكن الغالبية تم تعديلها بشكل  
+                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(108, 51, 149)" class="bi bi-check" viewBox="0 0 16 16">
+                              <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+                           </svg>
+                        </li>
+                        <li class="na">
+                           <span>  إدخال بعض النوادر أو الكلمات العشوائية </span>
+                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(108, 51, 149)" class="bi bi-check" viewBox="0 0 16 16">
+                              <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+                           </svg>
+                        </li>
+                        <li class="na">
+                           <span>إلى النص</span>
+                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(108, 51, 149)" class="bi bi-check" viewBox="0 0 16 16">
+                              <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+                           </svg>
+                        </li>
+                     </ul>
+                     <a href="#" class="btn btn-color">ابدأ معنا</a>
+                  </div>
+               </div>
+               <div class="col-lg-4 mt-4 mt-lg-0 offer" data-aos="fade-up" data-aos-delay="300">
+                  <div class="box">
+                     <h3>الأعمال التطويرية</h3>
+                     <h4>40<sup>$</sup><span>/شهر</span></h4>
+                     <ul>
+                        <li>
+                           العديد من الأنواع المتوفرة لنصوص لوريم
+                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(108, 51, 149)" class="bi bi-check" viewBox="0 0 16 16">
+                              <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+                           </svg>
+                        </li>
+                        <li>
+                           ولكن الغالبية تم تعديلها بشكل  
+                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(108, 51, 149)" class="bi bi-check" viewBox="0 0 16 16">
+                              <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+                           </svg>
+                        </li>
+                        <li class="na">
+                           <span>  إدخال بعض النوادر أو الكلمات العشوائية </span>
+                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(108, 51, 149)" class="bi bi-check" viewBox="0 0 16 16">
+                              <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+                           </svg>
+                        </li>
+                        <li class="na">
+                           <span>إلى النص</span>
+                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(108, 51, 149)" class="bi bi-check" viewBox="0 0 16 16">
+                              <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+                           </svg>
+                        </li>
+                     </ul>
+                     <a href="#" class="btn btn-color">ابدأ معنا</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- 8th_section _contact-->
+      <section id="Contact" class="contact">
+         <div class="container text-center">
+            <div class="section-title  fadeInUp" data-wow-delay="0.1s">
+               <span>اتصل بنا</span>
+               <h2>اتصل بنا</h2>
+            </div>
+            <div class="row">
+               <div class="col-lg-6">
+                  <div class="row">
+                     <div class="col-md-6 mb-3">
+                        <div class="p-4 box rounded">
+                           <div class="mb-3">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="rgb(108, 51, 149)" class="bi bi-telephone" viewBox="0 0 16 16">
+                                 <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                              </svg>
+                           </div>
+                           <h3>اتصل بنا</h3>
+                           <p>
+                              +15589 35488 55
+                              <br>
+                              +16678 254445 41
+                           </p>
+                        </div>
+                     </div>
+                     <div class="col-md-6 mb-3">
+                        <div class="p-4 box rounded">
+                           <div class="mb-3">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="rgb(108, 51, 149)" class="bi bi-envelope-at" viewBox="0 0 16 16">
+                                 <path d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2H2Zm3.708 6.208L1 11.105V5.383l4.708 2.825ZM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2-7-4.2Z"/>
+                                 <path d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648Zm-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z"/>
+                              </svg>
+                           </div>
+                           <h3>الايميل</h3>
+                           <p>
+                              info@example.com
+                              <br>
+                              contact@example.com								
+                           </p>
+                        </div>
+                     </div>
+                     <div class="col-md-6 mb-3">
+                        <div class="p-4 box rounded">
+                           <div class="mb-3">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="rgb(108, 51, 149)" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                 <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                                 <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                              </svg>
+                           </div>
+                           <h3>العنوان</h3>
+                           <p>
+                              A108 شارع يافا,
+                              <br>
+                              القدس, البلدة القديمة
+                           </p>
+                        </div>
+                     </div>
+                     <div class="col-md-6 mb-3">
+                        <div class="p-4 box rounded">
+                           <div class="mb-3">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="rgb(108, 51, 149)" class="bi bi-clock" viewBox="0 0 16 16">
+                                 <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                                 <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
+                              </svg>
+                           </div>
+                           <h3>دوامنا</h3>
+                           <p>
+                              السبت _ الخميس
+                              <br>
+                              07:00 - 14:00 
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-6">
+                  <div class="row pt-5 box rounded">
+                     <div class="col-md-6 mb-3">
+                        <input type="text" class="form-control" placeholder="الاسم" required>
+                     </div>
+                     <div class="col-md-6 mb-3">
+                        <input type="text" class="form-control" placeholder="الايميل" required>
+                     </div>
+                     <div class="col-md-12 mb-3">
+                        <input type="text" class="form-control" placeholder="الموضوع" required>
+                     </div>
+                     <div class="col-md-12 mb-3">
+                        <textarea class="form-control" rows="4" placeholder="Message" required></textarea>
+                     </div>
+                     <div class="d-grid gap-2 mb-5  justify-content-center text-center">
+                        <button type="submit" class="btn btn-color">ابعث الرسالة</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!--  -->
+      <!-- footer -->
+      <footer id="footer" class="text-white py-5 pb-3 text-center text-lg-start">
+         <div class="container mt-4">
+            <div class="row">
+               <div  class="col-md-4 mb-3 text-center">
+                  <h3 class="text-warning">تواصل معنا</h3>
+                  <a href="#" class="text-decoration-none text-warning">
+                     <p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                           <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                        </svg>
+                        <span>العنوان</span>
+                     </p>
+                  </a>
+                  <a href="#" class="text-decoration-none text-warning">
+                     <p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                           <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                        </svg>
+                        <span>رقم الاتصال</span>
+                     </p>
+                  </a>
+                  <a href="#" class="text-decoration-none text-warning">
+                     <p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
+                           <path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2H2Zm-2 9.8V4.698l5.803 3.546L0 11.801Zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 9.671V4.697l-5.803 3.546.338.208A4.482 4.482 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671Z"/>
+                           <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034v.21Zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791Z"/>
+                        </svg>
+                        <span>الايميل</span>
+                     </p>
+                  </a>
+               </div>
+               <div id="media" class="col-md-4 mb-3 text-center">
+                  <h3 class=" text-warning ">لمتابعتنا</h3>
+                  <p class="fs-8 text-warning">
+                     تابع شركتنا للاستفادة من خدمات السحابة الرائعة
+                     اكتشف معنا قوة الحوسبة السحابية واستفد من مزاياها المذهلة. توفر شركتنا خدمات السحابة المتميزة التي تمكنك من تخزين البيانات وتحليلها وتشغيل تطبيقاتك بكفاءة عالية وبتكلفة منخفضة
+                  </p>
+                  <a href="https://www.facebook.com/" class="text-decoration-none text-warning">
+                     <p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="rgba(39, 77, 80, 0.76)" class="bi bi-facebook" viewBox="0 0 16 16">
+                           <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                        </svg>
+                     </p>
+                  </a>
+                  <a href="https://www.linkedin.com/" class="text-decoration-none text-warning">
+                     <p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill=" rgba(39, 77, 80, 0.76)" class="bi bi-linkedin" viewBox="0 0 16 16">
+                           <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                        </svg>
+                     </p>
+                  </a>
+                  <a href="https://github.com/" class="text-decoration-none text-warning">
+                     <p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"  fill=" rgba(39, 77, 80, 0.76)" class="bi bi-github" viewBox="0 0 16 16">
+                           <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                        </svg>
+                     </p>
+                  </a>
+               </div>
+               <div class="col-md-4 mb-3 text-warning text-center">
+                  <h3 class="text-warning">مواعيد دوامنا</h3>
+                  <p>
+                     <span>يوميا</span>
+                  </p>
+                  <p>
+                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock-history" viewBox="0 0 16 16">
+                        <path d="M8.515 1.019A7 7 0 0 0 8 1V0a8 8 0 0 1 .589.022l-.074.997zm2.004.45a7.003 7.003 0 0 0-.985-.299l.219-.976c.383.086.76.2 1.126.342l-.36.933zm1.37.71a7.01 7.01 0 0 0-.439-.27l.493-.87a8.025 8.025 0 0 1 .979.654l-.615.789a6.996 6.996 0 0 0-.418-.302zm1.834 1.79a6.99 6.99 0 0 0-.653-.796l.724-.69c.27.285.52.59.747.91l-.818.576zm.744 1.352a7.08 7.08 0 0 0-.214-.468l.893-.45a7.976 7.976 0 0 1 .45 1.088l-.95.313a7.023 7.023 0 0 0-.179-.483zm.53 2.507a6.991 6.991 0 0 0-.1-1.025l.985-.17c.067.386.106.778.116 1.17l-1 .025zm-.131 1.538c.033-.17.06-.339.081-.51l.993.123a7.957 7.957 0 0 1-.23 1.155l-.964-.267c.046-.165.086-.332.12-.501zm-.952 2.379c.184-.29.346-.594.486-.908l.914.405c-.16.36-.345.706-.555 1.038l-.845-.535zm-.964 1.205c.122-.122.239-.248.35-.378l.758.653a8.073 8.073 0 0 1-.401.432l-.707-.707z"/>
+                        <path d="M8 1a7 7 0 1 0 4.95 11.95l.707.707A8.001 8.001 0 1 1 8 0v1z"/>
+                        <path d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5z"/>
+                     </svg>
+                     <span>07:00_ 14:00</span>
+                  </p>
+               </div>
+            </div>
+            <div class="mt-3 text-center col-md-12">
+               <br>
+               <div class="mt-3 text-center col-md-12">
+                  <a href="index.html" class="navbar-brand">
+                  <img src="./assets/footer_saturn.png" alt="">
+                  </a>
+                  <br><br>
+               </div>
+               <p class="text-warning"> © 2023 كل الحقوق محفوظة بواسطة<a href="https://github.com/NadaAbuIssa" class="text-decoration-none"> 🪐</a><br>
+                  <a href="#" class="text-decoration-none text-warning">Privacy Policy</a>
+                  <a href="#" class="text-decoration-none text-warning">Terms of Use</a>
+                  <br>
+               </p>
+            </div>
+         </div>
+      </footer>
+      <!--  -->
+      <script src="./js/bootstrap.js"></script>
+	<script>
+      var Button = document.getElementById("menu_btn");
+  var list_Button = document.getElementById("list_btn");
+  var x_Button = document.getElementById("X_btn");
+  Button.addEventListener("click", function() {
+   console.log(x_Button.classList.contains("hide"));
+   if(x_Button.classList.contains("hide")){
+      x_Button.classList.remove("hide");
+      console.log("click11111");
+      list_Button.classList.add("hide");}
+      else{
+      x_Button.classList.add("hide");
+      list_Button.classList.remove("hide");
+      }
+  });
+  
+   </script>
 
-
-<!-- banner video and text-->
-<div class="container-fluid p-0">
-		<div class="banner embed-responsive-item">    
-			<video class="embed-responsive-item" muted autoplay="autoplay" loop="loop"><source src="./assets/video.mp4" type="video/mp4"></video>
-			<div class="container">
-				<div id="banner-text" class="row position-absolute top-50 start-50 translate-middle">
-				  <div class="col-12 intro">
-					<h1 class="banner-text text-center">خدمات سحابية</h1>
-					<p class="banner-text">خدمات مبتكرة تلبي احتياجاتك التقنية بكفاءة وأمان على أعلى مستوى</p>
-			
-				  </div>
-				</div>
-			  </div>
-		</div>
-</div>
-
-		<!--  -->
-
-
-<!-- 5th_section -->
-<section id="about" class="mt-4 pt-4 py-4 bg-white text-light ">
-	<br><br><br><br>
-	<div class="container">
-		<div class="row  align-items-center justify-content-center flex-row-reverse">
-			<div class="col-md">
-				<img src="./assets/launch.svg" alt="" class="img-fluid">
-			</div>
-			<div class="col-md py-2 text-dark">
-				<div class="fst-normal fs-2 section-title">استعد للانطلاق نحو المستقبل</div>
-				<div>
-					<ul class="fs-4 long-line">
-						<li class="d-inline line ms-2">هدفنا</li>
-						<li class="d-inline  ms-4">خبرتنا</li>
-						<li class="d-inline  ms-4">فريقنا</li>
-					</ul>
-				</div>	
-		 	  <div class=""></div>
-				<p>
-					مع شركة زحل. نحن نوفر حلولًا مبتكرة ومتقدمة في مجال الحوسبة السحابية
-	<br>
-					نعمل جنبًا إلى جنب مع عملائنا لتحقيق النجاح وتحقيق أهدافهم
-				</p>
-                <p class="section-title pt-1 pb-1 fw-bold">الخبرة والتميز: تقديم الخدمات على أعلى مستوى </p>
-
-				<p>خبرتنا وفريقنا المتخصص يضمنان تقديم الخدمات على أعلى مستوى وفقًا لأحدث التقنيات والمعايير.
-	<br>
-					نحن نسعى جاهدين لتحقيق رضا العملاء وتجاوز توقعاتهم من خلال تقديم حلول فعالة وموثوقة
-
-				</p>
-				<p class=" fw-bold section-title pt-1 pb-1">فريقنا المحترف: شركاء في الابتكار والتطوير لتحقيق النجاح المستدام</p>
-				<p>
-					فريقنا المحترف مستعد لمساعدتك في الابتكار والتطوير وتحقيق النجاح في مجالك
-	<br>
-					 انضم إلى قائمة عملائنا المتميزين واستمتع بتجربة فريدة وحلول مبتكرة تساهم في نجاحك المستدام
-				</p>
-              </div>
-			</div>
-		</div>
-		<br><br><br><br>
-</section>
-<!--  -->
-
- <div class="container-xxl mt-5 pt-5 shadow-lg p-3 mb-4 bg-body-tertiary rounded py-5" id="services">
-	<br><br>
-	
-	 <!-- Services -->
-	<div class="container  py-5 px-lg-5">
-		<div class="text-center  fadeInUp" data-wow-delay="0.1s">
-			<div class="section-title">
-				<span>خدماتنا</span>
-				<h2>خدماتنا</h2>
-				</div>
-		</div>
-		<div class="row g-4">
-			<div class="col-md-4  fadeInUp" data-wow-delay="0.1s">
-				<div class=" bg-light shadow-lg p-3 mb-2 bg-body-tertiary rounded p-4">
-					<h5 class="mb-3">خدمات الحوسبة السحابية</h5>
-					<p class="m-0">
-
-    توفير خوادم افتراضية تمكن المؤسسات من استضافة تطبيقاتها ومواقع الويب على السحابة
-    توفير موارد الحوسبة بناءً على الطلب، مثل الوحدات المركزية
-					</p>
-					<div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle mb-4" style="width: 60px; height: 60px;">
-						<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill=" rgb(108, 51, 149)" class="bi bi-cloud" viewBox="0 0 16 16">
-							<path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383zm.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
-						  </svg>					
-						</div>
-					</div>
-			</div>
-			<div class="col-md-4  fadeInUp" data-wow-delay="0.3s">
-				<div class="bg-light shadow-lg p-3 mb-5 bg-body-tertiary rounded p-4">
-					<h5 class="mb-3">خدمات التخزين السحابي</h5>
-					<p class="m-0">
-
-    توفير مساحة تخزين سحابية للملفات وقواعد البيانات و المستندات البيانات الأخرى على الإنترنت
-    الوصول إلى البيانات من أي مكان وفي أي وقت بواسطة الإنترنت
-
-					</p>
-					<div class="d-inline-flex  align-items-center justify-content-center bg-secondary-gradient rounded-circle mb-4" style="width: 60px; height: 60px;">
-						<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill=" rgb(108, 51, 149)" class="bi bi-cloud-arrow-up" viewBox="0 0 16 16">
-							<path fill-rule="evenodd" d="M7.646 5.146a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 6.707V10.5a.5.5 0 0 1-1 0V6.707L6.354 7.854a.5.5 0 1 1-.708-.708l2-2z"/>
-							<path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383zm.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
-						  </svg>					
-						</div>
-				</div>
-			</div>
-			<div class="col-md-4 fadeInUp" data-wow-delay="0.5s">
-				<div class=" bg-light shadow-lg p-3 mb-5 bg-body-tertiary rounded p-4">
-					<h5 class="mb-3">خدمات الشبكة السحابية</h5>
-					<p class="m-0">
-
-    توفير خدمات الشبكة الافتراضية للاتصال بين الموارد والتطبيقات والمستخدمين على السحابة
-    إمكانية تكوين شبكات افتراضية خاصة وتوزيع المرور وتأمين مرور البيانات
-					</p>
-					<div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle mb-4" style="width: 60px; height: 60px;">
-						<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill=" rgb(108, 51, 149)" class="bi bi-hdd-network" viewBox="0 0 16 16">
-							<path d="M4.5 5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zM3 4.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z"/>
-							<path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v1a2 2 0 0 1-2 2H8.5v3a1.5 1.5 0 0 1 1.5 1.5h5.5a.5.5 0 0 1 0 1H10A1.5 1.5 0 0 1 8.5 14h-1A1.5 1.5 0 0 1 6 12.5H.5a.5.5 0 0 1 0-1H6A1.5 1.5 0 0 1 7.5 10V7H2a2 2 0 0 1-2-2V4zm1 0v1a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1zm6 7.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5z"/>
-						  </svg>					
-						</div>
-				</div>
-			</div>
-			<div class="col-md-4  fadeInUp" data-wow-delay="0.1s">
-				<div class=" bg-light shadow-lg p-3 mb-5 bg-body-tertiary rounded p-4">
-					<h5 class="mb-3">خدمات التحليل السحابي</h5>
-					<p class="m-0">
-
-    توفير أدوات وخدمات التحليل لاستخلاص البيانات القيمة وتحليلها
-	    تقديم الذكاء الاصطناعي وتعلم الآلة للتنبؤ بالاتجاهات وتوفير النصائح التحليلية وتحويلها إلى معلومات قيمة
-
-					</p>
-					<div class="d-inline-flex align-items-center justify-content-center bg-secondary-gradient rounded-circle mb-4" style="width: 60px; height: 60px;">
-						<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill=" rgb(108, 51, 149)" class="bi bi-bar-chart-line-fill" viewBox="0 0 16 16">
-							<path d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1V2z"/>
-						  </svg>					
-						</div>
-				</div>
-			</div>
-			<div class="col-md-4  fadeInUp" data-wow-delay="0.3s">
-				<div class=" bg-light shadow-lg p-3 mb-5 bg-body-tertiary rounded p-4">
-					<h5 class="mb-3">خدمات الأمان السحابي</h5>
-					<p class="m-0">
-						توفير حماية للبيانات والتطبيقات والأنظمة من خلال تقديم خدمات الأمان السحابي
-تأمين الاتصالات والتشفير والتحقق من الهوية وإدارة الوصول
-					</p>
-					<div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle mb-4" style="width: 60px; height: 60px;">
-						<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill=" rgb(108, 51, 149)" class="bi bi-shield-fill-check" viewBox="0 0 16 16">
-							<path fill-rule="evenodd" d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.777 11.777 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7.159 7.159 0 0 0 1.048-.625 11.775 11.775 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.541 1.541 0 0 0-1.044-1.263 62.467 62.467 0 0 0-2.887-.87C9.843.266 8.69 0 8 0zm2.146 5.146a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647z"/>
-						  </svg>					
-						</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<br><br>
-<!-- >>>>>>>>>>>>>>>>>>>>>>>>>>> -->
-<!-- 6th_section _Team-->
-<section id="team">
-	<br><br>
-	<div class="container text-center">
-		<div class="section-title">
-			<span>فريقنا</span>
-			<h2>فريقنا</h2>
-			<p>
-				فريقنا المتكامل من المحترفين ذوي المهارات العالية الذين يعملون بتفانٍ لضمان تقديم الخدمات على أعلى مستوى. يضم فريقنا متخصصين متمرسين يتمتعون بمعرفة واسعة بأحدث التقنيات والمعايير،
-				مما يضمن تقديم حلول فعالة وموثوقة. نحن نسعى جاهدين لتحقيق رضا عملائنا وتجاوز توقعاتهم
-			</p>
-		  </div>
-	
-	<div class="row team">
-		<div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-			<div class="team-img bg-white m-20 member bg-light shadow-lg p-3 mb-5 bg-body-tertiary rounded p-4">
-				<img src="./assets/team1.jpg" alt="" class="team-img img-fluid rounded">
-					<h4 class="mt-3 ms-2">حسن إبراهيم</h4>
-					<span>مهندس برمجيات </span>
-				<p>
-					ذو خبرة واسعة في تطوير حلول قابلة للتوسع والمبتكرة. بفضل معرفته الواسعة بلغات البرمجة، يقدم بشكل مستمر رمزًا عالي الجودة يلبي متطلبات العملاء			
-				</p>
-			</div>
-		</div>
-		<div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-			<div class="team-img bg-white m-20 member bg-light shadow-lg p-3 mb-5 bg-body-tertiary rounded p-4">
-				<img src="./assets/team3.jpg" alt="" class="team-img img-fluid rounded">
-					<h4 class="mt-3 ms-2">احمد حسن</h4>
-					<span>مدير المشروعات</span>
-				<p>
-					مدير مشروعات ديناميكي ومتحمس يتفوق في قيادة فرق عابرة للوظائف. بفضل مهاراته الممتازة في التنظيم والقدرة القوية على التواصل، يضمن تسليم المشاريع في الوقت
-</p>
-			</div>
-		</div>
-		<div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-			<div class="team-img bg-white m-20 member bg-light shadow-lg p-3 mb-5 bg-body-tertiary rounded p-4">
-				<img src="./assets/team2.jpg" alt="" class="team-img img-fluid rounded">
-					<h4 class="mt-3 ms-2">علي خان</h4>
-					<span>مدير تسويق</span>
-				<p>
-					محترف تسويق ماهر بشغف لإنشاء استراتيجيات فعالة تدفع نمو الأعمال. لديه سجل حافل في تطوير حملات تسويق ناجحة وبناء علاقات قوية مع العملاء
-				</p>
-			</div>
-		</div>
-		<div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-			<div class="team-img member bg-white m-20 bg-light shadow-lg p-3 mb-5 bg-body-tertiary rounded p-4">
-				<img src="./assets/team4.jpg" alt="" class="team-img img-fluid rounded">
-				<h4 class="mt-3 ms-2">كريم محمود</h4>
-				<span>محلل مالي</span>
-				<p>
-					محلل مالي متخصص في التفاصيل ولديه فهم عميق للنماذج المالية وتحليل البيانات. يلعب دوراً حاسماً في تقييم الأداء المالي للشركة، وإعداد الميزانيات، وتقديم توصيات				</p>
-			</div>
-		</div>
-	</div>
-</div>
-</section>
-<!--  -->
-
-</div>
-<!--  -->
-
-
-<!-- 4th_section -->
-<div id="bg_img" class="pic-background  section-padding text-center">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12 ">
-				<h2 class="mt-9 text-white">ابدأ تجربتك المجانية لمدة 14 يومًا</h2>
-				<h4 class="mb-5 mt-4  text-shadow text-white p-3">
-					انضم إلى أكثر من 10.000+ من العملاء الراضين الذين يستخدمون بالفعل زحل
-				</h4>
-				<a href="" class="btn text-decoration-none template-btn template-btn2 mt-4">ابدأ مجانا</a>
-
-			</div>
-		</div>
-	</div>
-</div>
-<!--  -->
-
-<!-- 7th_section pricing-->
-<section id="Price" class=" price container-xxl py-5">
-	<br><br>
-	<div class="container py-5 px-lg-5">
-		<div class="section-title text-center  fadeInUp" data-wow-delay="0.1s">
-			<span>أسعارنا</span>
-			<h2>أسعارنا</h2>
-		</div>
-		<div class="row">
-			<div class="col-lg-4 mt-4 mt-lg-0 offer" data-aos="fade-up" data-aos-delay="200">
-				<div class="box">
-					<h3>التجربة المجانية</h3>
-					<h4>0<sup>$</sup><span>/شهر</span></h4>
-					<ul>
-					  <li>
-						العديد من الأنواع المتوفرة لنصوص لوريم
-						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(108, 51, 149)" class="bi bi-check" viewBox="0 0 16 16">
-						<path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
-					  </svg>
-					</li>
-					  <li>ولكن الغالبية تم تعديلها بشكل 
-						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(108, 51, 149)" class="bi bi-check" viewBox="0 0 16 16">
-							<path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
-						  </svg>
-					</li>
-					<li class="na">
-						<span>  إدخال بعض النوادر أو الكلمات العشوائية </span>
-						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-x" viewBox="0 0 16 16">
-							<path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
-						  </svg>
-					   </li>
-					   <li class="na"><span>إلى النص</span>
-						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-x" viewBox="0 0 16 16">
-							<path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
-						  </svg>
-					</li>
-					</ul>
-					<br>
-					<a href="#" class=" btn btn-color">ابدأ معنا</a>
-				  </div>
-				</div>
-	  
-				<div class="col-lg-4 mt-4 mt-lg-0 offer" data-aos="fade-up" data-aos-delay="200">
-				  <div  class="box border-color ">
-					<h3>الأعمال التجارية</h3>
-					<h4>25<sup>$</sup><span>/شهر</span></h4>
-					<ul>
-						<li>
-							 العديد من الأنواع المتوفرة لنصوص لوريم
-							 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(108, 51, 149)" class="bi bi-check" viewBox="0 0 16 16">
-								<path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
-							  </svg>
-							</li>
-						<li>ولكن الغالبية تم تعديلها بشكل  
-							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(108, 51, 149)" class="bi bi-check" viewBox="0 0 16 16">
-								<path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
-							  </svg>
-						</li>
-						<li class="na">
-							 <span>  إدخال بعض النوادر أو الكلمات العشوائية </span>
-							 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(108, 51, 149)" class="bi bi-check" viewBox="0 0 16 16">
-								<path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
-							  </svg>
-							</li>
-						<li class="na"><span>إلى النص</span>
-							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(108, 51, 149)" class="bi bi-check" viewBox="0 0 16 16">
-								<path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
-							  </svg>
-						</li>
-  					</ul>
-					<a href="#" class="btn btn-color">ابدأ معنا</a>
-				  </div>
-				</div>
-	  
-				<div class="col-lg-4 mt-4 mt-lg-0 offer" data-aos="fade-up" data-aos-delay="300">
-				  <div class="box">
-					<h3>الأعمال التطويرية</h3>
-					<h4>40<sup>$</sup><span>/شهر</span></h4>
-					<ul>
-						<li>
-							 العديد من الأنواع المتوفرة لنصوص لوريم
-							 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(108, 51, 149)" class="bi bi-check" viewBox="0 0 16 16">
-								<path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
-							  </svg>
-							</li>
-						<li>ولكن الغالبية تم تعديلها بشكل  
-							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(108, 51, 149)" class="bi bi-check" viewBox="0 0 16 16">
-								<path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
-							  </svg>
-						</li>
-						<li class="na">
-							 <span>  إدخال بعض النوادر أو الكلمات العشوائية </span>
-							 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(108, 51, 149)" class="bi bi-check" viewBox="0 0 16 16">
-								<path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
-							  </svg>
-							</li>
-						<li class="na"><span>إلى النص</span>
-							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(108, 51, 149)" class="bi bi-check" viewBox="0 0 16 16">
-								<path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
-							  </svg>
-						</li>
-  					</ul>
-					<a href="#" class="btn btn-color">ابدأ معنا</a>
-				  </div>
-				</div>
-	  
-			</div>
-		</div>	
-</section>
-
-<!-- 8th_section _contact-->
-<section id="Contact" class="contact">
-	<div class="container text-center">
-		<div class="section-title  fadeInUp" data-wow-delay="0.1s">
-			<span>اتصل بنا</span>
-			<h2>اتصل بنا</h2>
-		</div>
-		<div class="row">
-			<div class="col-lg-6">
-				<div class="row">
-					<div class="col-md-6 mb-3">
-						<div class="p-4 box rounded">
-							<div class="mb-3">
-							<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="rgb(108, 51, 149)" class="bi bi-telephone" viewBox="0 0 16 16">
-								<path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
-							</svg>
-							</div>
-							<h3>اتصل بنا</h3>
-							<p>
-								+15589 35488 55
-								<br>
-								+16678 254445 41
-							</p>
-						</div>
-
-					</div>
-					<div class="col-md-6 mb-3">
-						<div class="p-4 box rounded">
-							<div class="mb-3">
-							<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="rgb(108, 51, 149)" class="bi bi-envelope-at" viewBox="0 0 16 16">
-								<path d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2H2Zm3.708 6.208L1 11.105V5.383l4.708 2.825ZM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2-7-4.2Z"/>
-								<path d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648Zm-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z"/>
-							  </svg>
-							</div>
-							<h3>الايميل</h3>
-							<p>
-								info@example.com
-								<br>
-								contact@example.com								
-							</p>
-						</div>
-
-					</div>
-					<div class="col-md-6 mb-3">
-						<div class="p-4 box rounded">
-							<div class="mb-3">
-							<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="rgb(108, 51, 149)" class="bi bi-geo-alt" viewBox="0 0 16 16">
-								<path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
-								<path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-							  </svg>
-							</div>
-							<h3>العنوان</h3>
-							<p>
-								A108 شارع يافا,
-								<br>
-								القدس, البلدة القديمة
-							</p>
-						</div>
-
-					</div>
-					<div class="col-md-6 mb-3">
-						<div class="p-4 box rounded">
-							<div class="mb-3">
-							<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="rgb(108, 51, 149)" class="bi bi-clock" viewBox="0 0 16 16">
-								<path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
-								<path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
-							  </svg>
-							</div>
-							<h3>دوامنا</h3>
-							<p>
-								السبت _ الخميس
-								<br>
-								07:00 - 14:00 
-							</p>
-						</div>
-						</div>
-					</div>
-					
-				</div>
-				<div class="col-lg-6">
-					<div class="row pt-5 box rounded">
-						<div class="col-md-6 mb-3">
-							<input type="text" class="form-control" placeholder="الاسم" required>
-						</div>
-						<div class="col-md-6 mb-3">
-							<input type="text" class="form-control" placeholder="الايميل" required>
-						</div>
-						<div class="col-md-12 mb-3">
-							<input type="text" class="form-control" placeholder="الموضوع" required>
-						</div>
-						<div class="col-md-12 mb-3">
-							<textarea class="form-control" rows="4" placeholder="Message" required></textarea>
-						</div>
-						<div class="d-grid gap-2 mb-5  justify-content-center text-center">
-							<button type="submit" class="btn btn-color">ابعث الرسالة</button>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-</section>
-<!--  -->
-
-<!-- footer -->
-<footer id="footer" class="text-white py-5 pb-3 text-center text-lg-start">
-	<div class="container mt-4">
-		<div class="row">
-			<div  class="col-md-4 mb-3 text-center">
-				<h3 class="text-warning">تواصل معنا</h3>
-				<a href="#" class="text-decoration-none text-warning">
-				<p>
-					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
-						<path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
-					  </svg>					
-					  <span>العنوان</span>
-				</p>
-			</a>
-			<a href="#" class="text-decoration-none text-warning">
-				<p>
-					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
-						<path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
-					  </svg>					
-					  <span>رقم الاتصال</span>
-				</p>
-			</a>
-			<a href="#" class="text-decoration-none text-warning">
-				<p>
-					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
-						<path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2H2Zm-2 9.8V4.698l5.803 3.546L0 11.801Zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 9.671V4.697l-5.803 3.546.338.208A4.482 4.482 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671Z"/>
-						<path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034v.21Zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791Z"/>
-					  </svg>					
-					  <span>الايميل</span>
-				</p>
-				</a>
-			</div>
-			<div id="media" class="col-md-4 mb-3 text-center">
-				<h3 class=" text-warning ">لمتابعتنا</h3>
-				<p class="fs-8 text-warning">
-
-تابع شركتنا للاستفادة من خدمات السحابة الرائعة
-
-اكتشف معنا قوة الحوسبة السحابية واستفد من مزاياها المذهلة. توفر شركتنا خدمات السحابة المتميزة التي تمكنك من تخزين البيانات وتحليلها وتشغيل تطبيقاتك بكفاءة عالية وبتكلفة منخفضة
-				</p>
-			<a href="https://www.facebook.com/" class="text-decoration-none text-warning">
-				<p>
-					<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="rgba(39, 77, 80, 0.76)" class="bi bi-facebook" viewBox="0 0 16 16">
-						<path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
-					  </svg>					
-				</p>
-			</a>
-			<a href="https://www.linkedin.com/" class="text-decoration-none text-warning">
-				<p>
-					<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill=" rgba(39, 77, 80, 0.76)" class="bi bi-linkedin" viewBox="0 0 16 16">
-						<path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
-					  </svg>					
-				</p>
-			</a>
-			<a href="https://github.com/" class="text-decoration-none text-warning">
-				<p>
-					<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"  fill=" rgba(39, 77, 80, 0.76)" class="bi bi-github" viewBox="0 0 16 16">
-						<path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-					  </svg>					
-				</p>
-			</a>
-			</div>
-			<div class="col-md-4 mb-3 text-warning text-center">
-				<h3 class="text-warning">مواعيد دوامنا</h3>
-				<p>
-					<span>يوميا</span>
-				</p>
-				<p>
-					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock-history" viewBox="0 0 16 16">
-						<path d="M8.515 1.019A7 7 0 0 0 8 1V0a8 8 0 0 1 .589.022l-.074.997zm2.004.45a7.003 7.003 0 0 0-.985-.299l.219-.976c.383.086.76.2 1.126.342l-.36.933zm1.37.71a7.01 7.01 0 0 0-.439-.27l.493-.87a8.025 8.025 0 0 1 .979.654l-.615.789a6.996 6.996 0 0 0-.418-.302zm1.834 1.79a6.99 6.99 0 0 0-.653-.796l.724-.69c.27.285.52.59.747.91l-.818.576zm.744 1.352a7.08 7.08 0 0 0-.214-.468l.893-.45a7.976 7.976 0 0 1 .45 1.088l-.95.313a7.023 7.023 0 0 0-.179-.483zm.53 2.507a6.991 6.991 0 0 0-.1-1.025l.985-.17c.067.386.106.778.116 1.17l-1 .025zm-.131 1.538c.033-.17.06-.339.081-.51l.993.123a7.957 7.957 0 0 1-.23 1.155l-.964-.267c.046-.165.086-.332.12-.501zm-.952 2.379c.184-.29.346-.594.486-.908l.914.405c-.16.36-.345.706-.555 1.038l-.845-.535zm-.964 1.205c.122-.122.239-.248.35-.378l.758.653a8.073 8.073 0 0 1-.401.432l-.707-.707z"/>
-						<path d="M8 1a7 7 0 1 0 4.95 11.95l.707.707A8.001 8.001 0 1 1 8 0v1z"/>
-						<path d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5z"/>
-					  </svg>					
-					  <span>07:00_ 14:00</span>
-				</p>
-			</div>
-		</div>
-		
-		<div class="mt-3 text-center col-md-12">
-			<br>
-			<div class="mt-3 text-center col-md-12">
-
-				<a href="index.html" class="navbar-brand">
-					<img src="./assets/footer_saturn.png" alt="">
-				</a>
-				<br><br>
-		</div>
-			<p class="text-warning"> © 2023 كل الحقوق محفوظة بواسطة<a href="https://github.com/NadaAbuIssa" class="text-decoration-none"> 🪐</a><br>
-				<a href="#" class="text-decoration-none text-warning">Privacy Policy</a>
-				<a href="#" class="text-decoration-none text-warning">Terms of Use</a>
-				<br>
-				</p>
-				</div>
-	</div>
-</footer>
-<!--  -->
-
-<script src="./js/bootstrap.js"></script>
-<script src="./js/main.js"></script>
-</body>
+   </body>
 </html>
